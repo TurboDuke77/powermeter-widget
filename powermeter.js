@@ -14,7 +14,7 @@ async function loadSettings() {
     // First time run, create a default settings file
     let defaultSettings = {
       powermeter: "tasmota",
-      tasmotaApiUrl: "http://192.168.178.64/cm?cmnd=status%208",
+      tasmotaApiUrl: "http://IP-adress/cm?cmnd=status%208",
       tasmotaUser: "changeme",
       tasmotaPass: "changeme",
       showPowerDraw: 1,
@@ -61,6 +61,8 @@ function getPowerDrawValue(powerDrawData) {
 //       powerDrawData.StatusSNS &&
 //       powerDrawData.StatusSNS.hasOwnProperty("")
 //     ) {
+
+    // see how looks your json output with http://IP-adress/cm?cmnd=status%208
       return parseFloat(powerDrawData.StatusSNS["M60"]["Power"]) || 0;
 //     }
   } 
