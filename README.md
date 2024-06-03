@@ -31,5 +31,4 @@ For additional security, you might want to set up HTTP Basic authentication for 
 
 - [Scriptable](https://scriptable.app/)
 - [Tasmota](https://tasmota.github.io/docs/)
-- [Hichi Reader](https://www.ebay.de/sch/i.html?_from=R40&_nkw=hichi+ir+reader&_sacat=0) to read the values from my power meter
-- [Smartmeter Reader](https://www.ebay.de/sch/i.html?_from=R40&_tasmota+smartmeterr+ir+reader&_sacat=0) other smartmeter with tasmota firmware
+- [Smartmeter Reader](https://www.ebay.de/sch/i.html?_from=R40&_nkw=smartmeter+tasmota+ir+reader&_sacat=0) find smartmeter reader with tasmota firmware
