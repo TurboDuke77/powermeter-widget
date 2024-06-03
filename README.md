@@ -10,8 +10,9 @@ This is a simple widget for Scriptable that displays current power consumption d
 To set up the widget, follow these steps:
 
 1. Load the `powermeter.js` file into Scriptable.
-2. Run the widget. Upon the first run, an `powermeter-config.json` file is created inside the Scriptable folder of your iCloud. Update the `ip-adress` variable with the IP address or URL of your tasmota ir reader.
-3. If desired, you may customize the thresholds section as well to configure how the Power value is colored.
+2. Update the `ip-adress` variable with the IP address or URL of your tasmota ir reader AND JSON variables.
+3. Run the widget. Upon the first run, an `powermeter-config.json` file is created inside the Scriptable folder of your iCloud. 
+4. If desired, you may customize the thresholds section as well to configure how the Power value is colored.
 
 ### JSON Output Tasmota device
 
