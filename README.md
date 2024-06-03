@@ -1,6 +1,6 @@
 # Powermeter widget
 
-This is a simple widget for Scriptable that displays current data from your powermeter.
+This is a simple widget for Scriptable that displays current power consumption data from your powermeter.
 
 ![IMG_1333](https://github.com/TurboDuke77/powermeter-widget/assets/38126777/580d946a-ea2f-4c97-8fb3-f79339e860cf)
 
@@ -11,23 +11,21 @@ To set up the widget, follow these steps:
 
 ### Obligatory
 
-1. Load the `opendtu-small.js` or `opendtu-medium.js` file into Scriptable.
-2. Run the widget. Upon the first run, an `opendtu-config.json` file is created inside the Scriptable folder of your iCloud. Update the `dtuApiUrl` variable with the IP address or URL of your OpenDTU.
+1. Load the `powermeter.js` file into Scriptable.
+2. Run the widget. Upon the first run, an `powermeter-config.json` file is created inside the Scriptable folder of your iCloud. Update the `ip-adress` variable with the IP address or URL of your tasmota ir reader.
+3. If desired, you may customize the thresholds section as well to configure how the Power value is colored.
 
-### Optional: Current power draw
+### JSON Output Tasmota device
 
-1. If you want to show the current power draw at your power meter, set `showPowerDraw = 1`.
-2. As of now, the Tasmota and Shelly API are supported for power draw readings. Depending on your power meter, set `powermeter` to either `tasmota` or `shelly`
-3. update the `tasmotaApiUrl`/`shellyApiUrl` variable with the IP address or URL of your Tasmota device.
-4. If you use HTTP basic authentication, make sure to set `tasmotaUser`/`shellyUser` and `tasmotaPass`/`shellyPass` respectively.
-5. If desired, you may customize the thresholds section as well to configure how the Power value is colored.
+depending on the variables used in the tasmota script, the designation “m60” or “power” must also be adapted. in my case, the output in the browser with the address looks like this
+
+{"StatusSNS":{"Time":"2024-06-03T06:24:23","M60":{"E_in":2367.678,"E_out":41.915,"Power":46}}}
+
 
 ## Accessing the widget from the Internet
 
-It is strongly recommended **not** to completely expose your OpenDTU/Tasmota/Shelly device to the internet due to security reasons. However, if you still want to access it remotely, you can use a reverse proxy such as [Nginx Proxy Manager](https://nginxproxymanager.com/). By configuring the reverse proxy to only expose the `/api/livedata/status` endpoint, you can limit the exposure of your OpenDTU. Same goes for the `/cm?cmnd=status%208` endpoint of your Tasmota device or the `/status` endpoint of your Shelly. Since this endpoint only provides read-only access and does not expose any private data, it should be relatively safe. However, please note that I do not take any responsibility for any issues that may arise from this configuration.
+It is strongly recommended **not** to completely expose your Tasmota device to the internet due to security reasons.
 For additional security, you might want to set up HTTP Basic authentication for the URLs. The widget provides support for that as well (c.f. above).
-
-For instructions on how to forward the API endpoint using Nginx Proxy Manager, refer to [this](https://github.com/NginxProxyManager/nginx-proxy-manager/issues/104#issuecomment-490720849) hint.
 
 ## Links
 
