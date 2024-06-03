@@ -17,7 +17,7 @@ To set up the widget, follow these steps:
 
 ### JSON Output Tasmota device
 
-depending on the variables used in the tasmota script, the designation “m60” or “power” must also be adapted. in my case, the output in the browser with the address looks like this
+depending on the variables used in the tasmota script, the designation “m60” or “power” must also be adapted. in my case, the output in the browser with the address http://IP-adress/cm?cmnd=status%208 looks like this
 
 {"StatusSNS":{"Time":"2024-06-03T06:24:23","M60":{"E_in":2367.678,"E_out":41.915,"Power":46}}}
 
