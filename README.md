@@ -9,8 +9,6 @@ This is a simple widget for Scriptable that displays current power consumption d
 
 To set up the widget, follow these steps:
 
-### Obligatory
-
 1. Load the `powermeter.js` file into Scriptable.
 2. Run the widget. Upon the first run, an `powermeter-config.json` file is created inside the Scriptable folder of your iCloud. Update the `ip-adress` variable with the IP address or URL of your tasmota ir reader.
 3. If desired, you may customize the thresholds section as well to configure how the Power value is colored.
@@ -20,6 +18,8 @@ To set up the widget, follow these steps:
 depending on the variables used in the tasmota script, the designation “m60” or “power” must also be adapted. in my case, the output in the browser with the address http://IP-adress/cm?cmnd=status%208 looks like this
 
 {"StatusSNS":{"Time":"2024-06-03T06:24:23","M60":{"E_in":2367.678,"E_out":41.915,"Power":46}}}
+see line in script:
+return parseFloat(powerDrawData.StatusSNS["M60"]["Power"]) || 0;
 
 
 ## Accessing the widget from the Internet
