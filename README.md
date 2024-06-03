@@ -2,8 +2,7 @@
 
 This is a simple widget for Scriptable that displays current data from your powermeter.
 
-![Small widget](screenshots/screenshot-power-draw.jpg)
-![Medium-sized widget](screenshots/screenshot-medium.jpg)
+
 
 ## Setup
 
