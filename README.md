@@ -2,6 +2,7 @@
 
 This is a simple widget for Scriptable that displays current data from your powermeter.
 
+![IMG_1333](https://github.com/TurboDuke77/powermeter-widget/assets/38126777/580d946a-ea2f-4c97-8fb3-f79339e860cf)
 
 
 ## Setup
