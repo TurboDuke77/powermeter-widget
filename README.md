@@ -25,7 +25,7 @@ return parseFloat(powerDrawData.StatusSNS["M60"]["Power"]) || 0;
 
 ## Please note
 
-Due to power saving specifications from Apple iOS, the update rate cannot be triggered by the script, it is performed by iOS. The time since the last update is therefore displayed.
+Due to power saving specifications from Apple iOS, the widget update rate cannot be triggered by the script, it is performed by iOS. The time since the last update is therefore displayed.
 
 ## Accessing the widget from the Internet
 
