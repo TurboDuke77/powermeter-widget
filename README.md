@@ -30,7 +30,6 @@ For additional security, you might want to set up HTTP Basic authentication for 
 ## Links
 
 - [Scriptable](https://scriptable.app/)
-- [OpenDTU](https://github.com/tbnobody/OpenDTU)
 - [Tasmota](https://tasmota.github.io/docs/)
-- [Hichi Reader](https://www.ebay.de/itm/314152997777) to read the values from my power meter
-- [Nginx Proxy Manager](https://nginxproxymanager.com/)
+- [Hichi Reader](https://www.ebay.de/sch/i.html?_from=R40&_nkw=hichi+ir+reader&_sacat=0) to read the values from my power meter
+- [Smartmeter Reader](https://www.ebay.de/sch/i.html?_from=R40&_tasmota+smartmeterr+ir+reader&_sacat=0) other smartmeter with tasmota firmware
