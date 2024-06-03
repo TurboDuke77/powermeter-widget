@@ -35,5 +35,5 @@ For additional security, you might want to set up HTTP Basic authentication for 
 ## Links
 
 - [Scriptable](https://scriptable.app/)
-- [Tasmota](https://tasmota.github.io/docs/)
+- [Tasmota Smart Meter Interface](https://tasmota.github.io/docs/Smart-Meter-Interface/#easymeter-q1d-ascii-obis)
 - [Smartmeter Reader](https://www.ebay.de/sch/i.html?_from=R40&_nkw=smartmeter+tasmota+ir+reader&_sacat=0) find smartmeter reader with tasmota firmware
